@@ -33,7 +33,7 @@ public class GiantController {
     }
 
     public Nourishment getNourishment() {
-        return giantModel.getNourishment;
+        return giantModel.getNourishment();
     }
 
     public void setNourishment(Nourishment nourishment) {
