@@ -6,6 +6,11 @@ public class GiantModel {
     private Fatigue fatigue;
     public Nourishment nourishment;
 
+    public GiantModel(Health health, Nourishment nourishment, Fatigue fatigue) {
+        this.health = health;
+        this.fatigue = fatigue;
+        this.nourishment = nourishment;
+    }
 
     public Health getHealth() {
         return health;
@@ -29,5 +34,14 @@ public class GiantModel {
 
     public void setNourishment(Nourishment nourishment) {
         this.nourishment = nourishment;
+    }
+
+    @Override
+    public String toString() {
+        return "GiantModel{" +
+                "health=" + health +
+                ", fatigue=" + fatigue +
+                ", nourishment=" + nourishment +
+                '}';
     }
 }
