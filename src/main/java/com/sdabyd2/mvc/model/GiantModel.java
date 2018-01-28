@@ -4,12 +4,15 @@ public class GiantModel {
 
     private Health health;
     private Fatigue fatigue;
-    public Nourishment nourishment;
+    private Nourishment nourishment;
+    private TypeOfAction typeOfAction;
 
-    public GiantModel(Health health, Nourishment nourishment, Fatigue fatigue) {
+
+    public GiantModel(Health health, Nourishment nourishment, Fatigue fatigue, TypeOfAction typeOfAction) {
         this.health = health;
         this.fatigue = fatigue;
         this.nourishment = nourishment;
+        this.typeOfAction = typeOfAction;
     }
 
     public Health getHealth() {
@@ -36,12 +39,22 @@ public class GiantModel {
         this.nourishment = nourishment;
     }
 
+
+    public TypeOfAction getTypeOfAction() {
+        return typeOfAction;
+    }
+
+    public void setTypeOfAction(TypeOfAction typeOfAction) {
+        this.typeOfAction = typeOfAction;
+    }
+
     @Override
     public String toString() {
         return "GiantModel{" +
                 "health=" + health +
                 ", fatigue=" + fatigue +
                 ", nourishment=" + nourishment +
+                ", typeOfAction=" + typeOfAction +
                 '}';
     }
 }

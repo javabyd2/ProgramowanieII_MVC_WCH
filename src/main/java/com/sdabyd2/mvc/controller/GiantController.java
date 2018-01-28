@@ -1,9 +1,6 @@
 package com.sdabyd2.mvc.controller;
 
-import com.sdabyd2.mvc.model.Fatigue;
-import com.sdabyd2.mvc.model.GiantModel;
-import com.sdabyd2.mvc.model.Health;
-import com.sdabyd2.mvc.model.Nourishment;
+import com.sdabyd2.mvc.model.*;
 import com.sdabyd2.mvc.view.GiantView;
 
 public class GiantController {
@@ -42,5 +39,13 @@ public class GiantController {
 
     public void updateView(){
         this.giantView.displayGiant(giantModel);
+    }
+
+    public TypeOfAction getTypeOfAction(){
+        return giantModel.getTypeOfAction();
+    }
+
+    public void setTypeOfAction(TypeOfAction typeOfAction){
+        this.giantModel.setTypeOfAction(typeOfAction);
     }
 }
