@@ -50,8 +50,7 @@ public class GiantModel {
 
     @Override
     public String toString() {
-        return "GiantModel{" +
-                "health=" + health +
+        return  "health=" + health +
                 ", fatigue=" + fatigue +
                 ", nourishment=" + nourishment +
                 ", typeOfAction=" + typeOfAction +
