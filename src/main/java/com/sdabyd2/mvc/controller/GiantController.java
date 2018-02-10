@@ -6,15 +6,33 @@ import com.sdabyd2.mvc.view.GiantView;
 import java.util.List;
 
 public class GiantController {
-
+    public GiantController() {
+    }
 
     private List<GiantModel> monsters;
+
+    public List<GiantModel> getMonsters() {
+        return monsters;
+    }
+
+    public void setMonsters(List<GiantModel> monsters) {
+        this.monsters = monsters;
+    }
+
     private GiantView giantView;
+    private  int id;
+
+    public GiantController(List<GiantModel> monsters, int id) {
+        this.monsters = monsters;
+        this.id = id;
+    }
 
     public GiantController(List<GiantModel> giantModel, GiantView giantView) {
         this.monsters = giantModel;
         this.giantView = giantView;
     }
+
+
 
     public Health getHealth(int gh) {
         return monsters.get(gh).getHealth();

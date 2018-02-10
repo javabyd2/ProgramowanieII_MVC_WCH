@@ -1,8 +1,9 @@
 package com.sdabyd2.mvc.model;
 
 public enum Health {
-
     HEALTHY("healthy"), NOTHEALTHY("nothealthy"), DEAD("dead");
+
+
 
     private String title;
 

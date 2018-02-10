@@ -1,6 +1,8 @@
 package com.sdabyd2.mvc.model;
 
 public class GiantModel {
+    public GiantModel() {
+    }
 
     private Health health;
     private Fatigue fatigue;
